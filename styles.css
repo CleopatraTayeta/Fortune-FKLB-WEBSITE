@@ -1,0 +1,44 @@
+/* FKLB Engineering Tech - External stylesheet */
+* { box-sizing: border-box; }
+body { margin: 0; background-color: #050608; color: #d4d7db; font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 1.6; }
+#wrapper { width: 960px; margin: 0 auto; padding: 0 20px; }
+header { text-align: center; padding: 30px 0 10px; }
+header h1 { margin: 0; font-size: 64px; letter-spacing: 4px; color: #d4d7db; }
+header h1 span { color: #0a84ff; }
+header p { margin: 0; letter-spacing: 8px; font-weight: bold; }
+#topLinks { text-align: center; padding: 14px 0; border-top: 2px solid #0a84ff; border-bottom: 1px solid #232a33; margin-bottom: 30px; }
+#topLinks a { display: inline-block; margin: 0 14px; color: #8d95a0; text-decoration: none; font-weight: bold; }
+#topLinks a:hover, #topLinks a.active { color: #ffffff; border-bottom: 2px solid #0a84ff; }
+h2 { color: #ffffff; font-size: 32px; margin-top: 0; }
+h3 { color: #0a84ff; }
+#homeInfo { background-color: #0d1117; border: 1px solid #232a33; border-radius: 8px; padding: 40px; text-align: center; margin-bottom: 30px; }
+.btn { display: inline-block; background-color: #0a84ff; color: #ffffff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 6px; border: none; font-size: 17px; cursor: pointer; }
+.btn:hover { background-color: #1a6fe0; }
+.card { background-color: #0d1117; border: 1px solid #232a33; border-radius: 8px; padding: 20px; }
+.cols { display: flex; gap: 20px; margin-bottom: 30px; }
+.cols .card { flex: 1; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+th, td { padding: 12px; border-bottom: 1px solid #232a33; text-align: left; }
+th { color: #0a84ff; }
+label { display: block; margin-top: 14px; font-weight: bold; }
+input, select, textarea { width: 100%; padding: 10px; margin-top: 6px; background-color: #05080c; color: #ffffff; border: 1px solid #2c3541; border-radius: 6px; font-size: 16px; font-family: inherit; }
+textarea { min-height: 110px; }
+#bottomLinks { text-align: center; padding: 20px 0; border-top: 1px solid #232a33; }
+#bottomLinks a { color: #8d95a0; margin: 0 10px; }
+footer p { text-align: center; color: #8d95a0; font-size: 14px; padding-bottom: 20px; }
+a:focus, input:focus, select:focus, textarea:focus { outline: 3px solid #0a84ff; }
+/* Responsive: tablets and below */
+@media (max-width: 960px) {
+  #wrapper { width: 100%; padding: 0 16px; }
+  header h1 { font-size: 48px; }
+  #homeInfo { padding: 24px; }
+  #bottomLinks { line-height: 2; }
+  footer p { font-size: 13px; }
+  .cols { flex-direction: column; }
+}
+@media (max-width: 480px) {
+  header h1 { font-size: 38px; }
+  header p { letter-spacing: 4px; }
+  #topLinks a { margin: 0 8px; }
+  th, td { padding: 8px 4px; font-size: 15px; }
+}
